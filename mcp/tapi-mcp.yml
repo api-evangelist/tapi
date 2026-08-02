@@ -1,0 +1,61 @@
+generated: '2026-07-21'
+method: derived
+status: candidate
+source: https://developers.tapila.cloud/docs/category/api---reference
+notes: >-
+  No official hosted or remote MCP server was found for Tapi. This is a CANDIDATE
+  tool list derived from the operations documented in the Tapi API reference
+  (developers.tapila.cloud). Tool-to-endpoint bindings reference documentation
+  URLs because Tapi does not publish an OpenAPI definition with operationIds.
+server:
+  name: tapi
+  transport: http
+tools:
+  - name: login
+    description: Authenticate and obtain an access token for subsequent calls.
+    source_operation: https://developers.tapila.cloud/docs/api-reference/login/login
+  - name: list_companies
+    description: List billers/companies available for bill payment.
+    source_operation: https://developers.tapila.cloud/docs/api-reference/companies/tapi-companies
+  - name: get_company_by_code
+    description: Look up a single company/biller by its code.
+    source_operation: https://developers.tapila.cloud/docs/api-reference/companies/company-by-code
+  - name: list_popular_companies
+    description: List the most popular companies/billers.
+    source_operation: https://developers.tapila.cloud/docs/api-reference/companies/popular-companies
+  - name: list_recharge_companies
+    description: List companies available for phone/airtime recharges.
+    source_operation: https://developers.tapila.cloud/docs/api-reference/companies/companies-recharges
+  - name: list_subscription_companies
+    description: List companies available for subscriptions/memberships.
+    source_operation: https://developers.tapila.cloud/docs/api-reference/companies/companies-subscriptions
+  - name: get_service_debts
+    description: Query outstanding debts for a service/bill.
+    source_operation: https://developers.tapila.cloud/docs/api-reference/services/debts
+  - name: pay_service
+    description: Pay a service/bill.
+    source_operation: https://developers.tapila.cloud/docs/api-reference/services/payment
+  - name: get_service_operation_status
+    description: Poll the status of a service payment operation.
+    source_operation: https://developers.tapila.cloud/docs/api-reference/services/q-operation-status
+  - name: pay_recharge
+    description: Purchase a phone/airtime recharge.
+    source_operation: https://developers.tapila.cloud/docs/api-reference/recharges/payment
+  - name: get_recharge_operation_status
+    description: Poll the status of a recharge operation.
+    source_operation: https://developers.tapila.cloud/docs/api-reference/recharges/q-operation-status
+  - name: pay_subscription
+    description: Pay a subscription/membership.
+    source_operation: https://developers.tapila.cloud/docs/api-reference/subscriptions/payment
+  - name: get_subscription_operation_status
+    description: Poll the status of a subscription operation.
+    source_operation: https://developers.tapila.cloud/docs/api-reference/subscriptions/q-operation-status
+  - name: prepare_agenda_payment
+    description: Prepare a scheduled agenda payment.
+    source_operation: https://developers.tapila.cloud/docs/api-reference/agenda/prepare-payment
+  - name: create_agenda_adhesion
+    description: Create an adhesion (enroll) to a payment agenda.
+    source_operation: https://developers.tapila.cloud/docs/api-reference/agenda/adhesions
+  - name: bulk_agenda_payment
+    description: Execute a bulk payment against an agenda.
+    source_operation: https://developers.tapila.cloud/docs/api-reference/agenda/bulk-payment

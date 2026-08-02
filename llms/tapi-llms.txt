@@ -1,0 +1,43 @@
+# Tapi
+
+> Tapi (tapi.la) is the leading payment network in Latin America. Founded in 2022,
+> it provides financial infrastructure — bill payments, cash-in/cash-out, phone and
+> airtime recharges, and digital gift cards — that fintechs, banks and neobanks
+> embed via a single regional API across Argentina, Chile, Colombia, Mexico and Peru.
+
+## APIs
+
+- [Tapi API Reference](https://developers.tapila.cloud/docs/category/api---reference): Bill payments, recharges, subscriptions and scheduled-payment operations.
+- [Developer Portal](https://www.tapila.dev/): Tapi developer hub.
+- [Documentation](https://developers.tapila.cloud/docs/): Integration guides and API reference (Spanish).
+- [Getting Started / Integration Stages](https://developers.tapila.cloud/docs/integration/Etapas%20de%20integracion): Back-end and front-end integration path.
+
+## Products
+
+- [Companies (billers)](https://developers.tapila.cloud/docs/api-reference/companies/tapi-companies): Directory of payable companies/billers.
+- [Services (bill payment)](https://developers.tapila.cloud/docs/api-reference/services/tapi-services): Query debts and pay services/bills.
+- [Recharges](https://developers.tapila.cloud/docs/api-reference/recharges/tapi-recharges): Phone / airtime top-ups.
+- [Subscriptions](https://developers.tapila.cloud/docs/api-reference/subscriptions/tapi-subscriptions): Membership payments.
+- [Agenda (scheduled payments)](https://developers.tapila.cloud/docs/api-reference/agenda/servicio-de-agenda): Adhesions, prepared and bulk scheduled payments.
+- [Digital PINs / Gift cards](https://developers.tapila.cloud/docs/category/pines-digitales): Digital gift card and PIN products.
+
+## Auth
+
+- [Login service](https://developers.tapila.cloud/docs/api-reference/login/login): Obtain an access token used on subsequent calls.
+
+## Events
+
+- [Service payment webhook](https://developers.tapila.cloud/docs/api-reference/services/webhook): Callback with final payment-operation status.
+- [Agenda notifications](https://developers.tapila.cloud/docs/api-reference/agenda/agenda-notifications): Scheduled-payment notifications.
+
+## Docs
+
+- [Blog](https://developers.tapila.cloud/blog): Developer blog.
+- [Privacy Policy](https://tapi.la/politica-de-privacidad/)
+- [Information Security Policy](https://tapi.la/politica-de-seguridad-de-la-informacion/)
+
+## Company
+
+- [Website](https://tapi.la/)
+- [tapi_pay](https://tapipay.la/): Payments acceptance product.
+- [LinkedIn](https://www.linkedin.com/company/81621645/)

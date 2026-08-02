@@ -1,0 +1,42 @@
+generated: '2026-07-21'
+method: searched
+source: https://developers.tapila.cloud/docs/
+docs: https://developers.tapila.cloud/docs/
+description: >-
+  Cross-cutting request/response conventions for the Tapi payment network API,
+  captured from the developer documentation. Tapi does not publish an OpenAPI
+  definition; these conventions are asserted from the documented API-reference
+  structure.
+authentication:
+  style: login-issued token
+  docs: https://developers.tapila.cloud/docs/api-reference/login/login
+async_operations:
+  style: accept-then-resolve
+  description: >-
+    Payment operations (Services, Recharges, Subscriptions) are accepted and then
+    resolved asynchronously. Callers determine the final outcome either by polling
+    the operation-status endpoint or by receiving a webhook notification.
+  status_endpoints:
+    - product: services
+      docs: https://developers.tapila.cloud/docs/api-reference/services/q-operation-status
+    - product: recharges
+      docs: https://developers.tapila.cloud/docs/api-reference/recharges/q-operation-status
+    - product: subscriptions
+      docs: https://developers.tapila.cloud/docs/api-reference/subscriptions/q-operation-status
+event_signaling:
+  webhooks: asyncapi/tapi-webhooks.yml
+products:
+  - services            # bill / service payments (debts, payment, status)
+  - recharges           # phone / airtime top-ups
+  - subscriptions       # memberships
+  - agenda              # scheduled / recurring payments (adhesions, bulk, prepare)
+  - pines-digitales     # digital PINs / gift cards
+  - companies           # biller directory (by-code, popular, per-product)
+cross_links:
+  authentication: authentication/tapi-authentication.yml
+  webhooks: asyncapi/tapi-webhooks.yml
+notes: >-
+  Idempotency semantics were NOT confirmed in the documentation captured during
+  this pass, so no idempotency contract is asserted here. Pagination, error-envelope
+  shape and rate-limit signaling are documented on the client-rendered portal and
+  were not captured verbatim.

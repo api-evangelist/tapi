@@ -1,0 +1,33 @@
+generated: '2026-07-21'
+method: searched
+source: https://developers.tapila.cloud/docs/api-reference/services/webhook
+description: >-
+  Tapi documents an asynchronous webhook / notification surface for reporting the
+  final status of long-running payment operations. Payment operations across the
+  Services, Recharges and Subscriptions products are accepted asynchronously and
+  their outcome is delivered either by polling the operation-status endpoint or by
+  receiving a webhook callback. The Agenda (scheduled/recurring payments) product
+  additionally emits agenda notifications. No AsyncAPI document is published; this
+  is a documented webhook catalog only (spec_type: none).
+spec_type: none
+event_delivery:
+  style: webhook
+  also_available: operation-status polling (q-operation-status endpoints)
+webhooks:
+  - name: service-payment-notification
+    docs: https://developers.tapila.cloud/docs/api-reference/services/webhook
+    summary: >-
+      Callback delivered with the final status of a service (bill) payment operation
+      once it has been resolved on the biller side.
+    product: services
+  - name: agenda-notifications
+    docs: https://developers.tapila.cloud/docs/api-reference/agenda/agenda-notifications
+    summary: >-
+      Notifications emitted for scheduled/recurring payment agendas (adhesions,
+      prepared payments and bulk payment outcomes).
+    product: agenda
+notes: >-
+  Exact event payload schemas, delivery headers and signature/verification details
+  are documented on the client-rendered developer portal and were not captured
+  verbatim in this pass; only the presence and scope of the webhook surface is
+  asserted here.

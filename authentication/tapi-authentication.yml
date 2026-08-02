@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: searched
+source: https://developers.tapila.cloud/docs/api-reference/login/login
+docs: https://developers.tapila.cloud/docs/api-reference/login/login
+summary:
+  types: [token]
+  model: login-issued-token
+  description: >-
+    Tapi exposes a dedicated Login service. Clients authenticate against the login
+    endpoint with their issued credentials and receive an access token, which is
+    then presented on subsequent calls to the Companies, Services, Recharges,
+    Subscriptions and Agenda endpoints.
+schemes:
+  - name: login
+    type: token
+    obtained_via: https://developers.tapila.cloud/docs/api-reference/login/login
+    sources: [docs]
+notes: >-
+  Tapi does not publish an OpenAPI definition, so this profile is derived from the
+  developer documentation rather than mechanically from securitySchemes. The exact
+  token header name, token lifetime and refresh semantics are documented on the
+  client-rendered developer portal and were not captured verbatim in this pass.
