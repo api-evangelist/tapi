@@ -30,6 +30,35 @@ edges:
   detected_by: sweep-argentina-fintech-registers.py
   first_seen: '2026-10-21'
   partner_tier: Fintech Startup
+- partner_name: Andreessen Horowitz (a16z)
+  partner: a16z
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://a16z.com/companies/tapi/
+  category: vc portfolio participation
+  contract_reference:
+    register: a16z portfolio (a16z.com/portfolio/, the page's own data-companies JSON)
+    standard: null
+    spec_file: null
+    role: vc-portfolio-company
+    registered_name: Tapi
+    register_id: https://a16z.com/companies/tapi/
+    register_country: null
+    register_website: https://tapi.la/
+    matched_domain: tapi.la
+    matched_by: domain
+    signal_note: 'participation only: the venture firm''s own published portfolio lists the company (investment);
+      an ownership and participation record, not conformance or certification'
+    detected_by: sweep-vc-portfolios.py
+    detected: '2026-10-21'
+    year: '2022'
+    status: Active
+    sector: Fintech;Seed
+  detected_by: sweep-vc-portfolios.py
+  first_seen: '2026-10-21'
 generated: '2026-10-21'
 method: searched
 source:
@@ -46,3 +75,9 @@ checked:
 - https://www.cnv.gov.ar/SitioWeb/RegistrosPublicos/Agentes
 - https://www.cnv.gov.ar/SitioWeb/RegistrosPublicos/Psav
 - https://www.coelsa.com.ar/
+- https://a16z.com/portfolio/
+- https://www.battery.com/company/
+- https://www.battery.com/wp-admin/admin-ajax.php
+- https://www.indexventures.com/companies/
+- https://www.sequoiacap.com/our-companies/
+- https://www.sequoiacap.com/sitemap.xml
