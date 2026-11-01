@@ -64,6 +64,102 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Tapi is a company surfaced as a portfolio company of a16z and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Tapi (tapi.la) is the leading payment network in Latin America, founded in 2022. It provides embeddable financial infrastructure — bill and service payments, cash-in/cash-out, phone and airtime recharges, digital gift cards and PINs, and scheduled/recurring payments — that fintechs, banks and neobanks integrate through a single regional API. Tapi operates across Argentina, Chile, Colombia, Mexico and Peru, exposing a directory of thousands of billers plus Services, Recharges, Subscriptions and Agenda products, with asynchronous operation-status polling and webhook notifications, behind a token-based Login service. tapi_pay extends the network into payment acceptance.
 
-Backed by: a16z
+**Areas:** Company · Payments · Bill Payments · Fintech · Latin America · Recharges · Gift Cards · Financial Infrastructure · Payment Network
+
+## Tapi on APIs.io
+
+Everything profiled for Tapi is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/tapi/](https://apis.io/providers/tapi/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Tapi API](https://apis.io/apis/tapi/tapi-api/) — Regional bill-payment and payments infrastructure API — biller directory, service/bill payments, phone recharges, subscriptions, scheduled-payment agendas…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Tapi Webhooks](https://apis.io/asyncapis/tapi/tapi-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [tapi](https://apis.io/servers/tapi/tapi/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Tapi Authentication](https://apis.io/security/tapi/tapi-authentication/)
+- [Tapi Domain Security](https://apis.io/security/tapi/tapi-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://tapi.la/)
+- [Documentation](https://developers.tapila.cloud/docs/)
+- [Getting started](https://developers.tapila.cloud/docs/integration/Etapas%20de%20integracion)
+- [API reference](https://developers.tapila.cloud/docs/category/api---reference)
+- [Blog](https://developers.tapila.cloud/blog)
+- [Security](https://tapi.la/politica-de-seguridad-de-la-informacion/)
+- [Privacy policy](https://tapi.la/politica-de-privacidad/)
+
+## API Evangelist rating
+
+**Kin Score 24.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 39.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 10.5 |
+
+**Agent readiness 19.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 14.3** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/tapi/](https://apis.io/providers/tapi/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Tapi: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/tapi/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
